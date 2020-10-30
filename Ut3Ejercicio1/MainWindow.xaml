@@ -14,11 +14,46 @@
     MaxHeight="600"
     MaxWidth="1000"
     Icon="32 1ut3.ico">
+    <Window.Resources>
+        <Style TargetType="StackPanel">
+            <Setter
+                Property="Margin"
+                Value="10" />
+        </Style>
+        <Style
+            TargetType="Label">
+            <Setter
+                Property="Margin"
+                Value="5" />
+            <Setter
+                Property="FontSize"
+                Value="16" />
+            <Setter
+                Property="FontWeight"
+                Value="Bold" />
+        </Style>
+        <Style
+            TargetType="TextBox">
+            <Setter
+                Property="Margin"
+                Value="5" />
+        </Style>
+
+        <Style
+            TargetType="Button">
+            <Setter
+                Property="Margin"
+                Value="5" />
+            <Setter
+                Property="Width"
+                Value="100" />
+        </Style>
+        
+    </Window.Resources>
 
     <StackPanel
            >
-            <StackPanel
-                Margin="10">
+            <StackPanel>
                 <StackPanel.Background>
                     <LinearGradientBrush
                         EndPoint="0.5,1"
@@ -31,15 +66,10 @@
                             Offset="1" />
                     </LinearGradientBrush>
                 </StackPanel.Background>
-                <Label
-                    Margin="5"
-                    FontSize="16"
-                    FontWeight="Bold">Nombre</Label>
-                <TextBox
-                    Margin="5"></TextBox>
+                <Label>Nombre</Label>
+                <TextBox></TextBox>
             </StackPanel>
-            <StackPanel
-                Margin="10">
+            <StackPanel>
                 <StackPanel.Background>
                     <LinearGradientBrush
                         EndPoint="0.5,1"
@@ -52,16 +82,11 @@
                             Offset="1" />
                     </LinearGradientBrush>
                 </StackPanel.Background>
-                <Label
-                    Margin="5"
-                    FontWeight="Bold"
-                    FontSize="16">Dirección</Label>
-                <TextBox
-                    Margin="5"></TextBox>
+                <Label>Dirección</Label>
+                <TextBox></TextBox>
 
             </StackPanel>
-            <StackPanel
-                Margin="10">
+            <StackPanel>
                 <StackPanel.Background>
                     <LinearGradientBrush
                         EndPoint="0.5,1"
@@ -74,25 +99,17 @@
                             Offset="1" />
                     </LinearGradientBrush>
                 </StackPanel.Background>
-                <Label
-                    Margin="5"
-                    FontWeight="Bold"
-                    FontSize="16">Correo electrónico</Label>
+                <Label>Correo electrónico</Label>
                 <TextBox
                     HorizontalAlignment="Left"
                     Margin="5" Width="750"></TextBox>
 
             </StackPanel>
             <StackPanel
-                Margin="10"
                 Orientation="Horizontal"
                 HorizontalAlignment="Right">
-                <Button
-                    Margin="5"
-                    Width="100">Aceptar</Button>
-                <Button
-                    Margin="5"
-                    Width="100">Cancelar</Button>
+                <Button>Aceptar</Button>
+                <Button>Cancelar</Button>
             </StackPanel>
 
         </StackPanel>
