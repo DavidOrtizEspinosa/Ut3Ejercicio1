@@ -20,6 +20,12 @@
                 Property="Margin"
                 Value="10" />
         </Style>
+        <Style TargetType="StackPanel" x:Key="stackPanel1">
+            <Setter Property="Orientation"
+                    Value="Horizontal" />
+            <Setter Property="HorizontalAlignment"
+                    Value="Right" />
+        </Style>
         <Style
             TargetType="Label">
             <Setter
@@ -105,9 +111,7 @@
                     Margin="5" Width="750"></TextBox>
 
             </StackPanel>
-            <StackPanel
-                Orientation="Horizontal"
-                HorizontalAlignment="Right">
+            <StackPanel Style="{StaticResource stackPanel1}">
                 <Button>Aceptar</Button>
                 <Button>Cancelar</Button>
             </StackPanel>
